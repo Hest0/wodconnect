@@ -1,0 +1,15 @@
+# Näin konffaat scriptin toimimaan joka tiistai klo 17 automaattisesti sun koneella:
+
+#1. Avaa terminal ("pääte")
+#2. Kirjota "crontab -e" ja paina enter
+#3. Paina "i" kirjainta jotta avautuu "-- INSERT --" näkymä
+#4. Copy pastee sinne yläriville tämä ilman heittomerkkejä: 
+#  "0 17 * * 2 sleep 10; /opt/homebrew/bin/python3 /Users/sami/wod_connect.py"
+#5. Paina esc
+#6. Kirjota ":wq" ja paina enter (write & quit)
+
+# '0' = kellonajan minuutit, '17' = tunti 'sleep 10' = scripti odottaa 10s ennen suorittamista
+# /opt/homebrew/bin/python3 = sun pythonin sijainti polkuna, muokkaa jos tarvii
+# /Users/sami/wod_connect.py = tän scriptin sijainti polkuna, muokkaa jos tarvii
+
+# Koneen pitää olla päällä, mielellään virtajohdossa, ei uni-tilassa ja kirjautuneena sisään jotta tää toimii
