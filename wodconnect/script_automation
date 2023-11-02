@@ -10,6 +10,6 @@
 
 # '0' = kellonajan minuutit, '17' = tunti 'sleep 10' = scripti odottaa 10s ennen suorittamista
 # /opt/homebrew/bin/python3 = sun pythonin sijainti polkuna, muokkaa jos tarvii
-# /Users/sami/wod_connect.py = tän scriptin sijainti polkuna, muokkaa jos tarvii
+# /Users/user/wod_connect.py = tän scriptin sijainti polkuna, muokkaa jos tarvii
 
 # Koneen pitää olla päällä, mielellään virtajohdossa, ei uni-tilassa ja kirjautuneena sisään jotta tää toimii
