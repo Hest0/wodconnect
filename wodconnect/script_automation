@@ -1,4 +1,4 @@
-#An example of how to configure the script to be run as a cron job on macOS or Linux:
+#An example of how to automate the script as a cron job on macOS or Linux:
 
 #1. Open terminal
 #2. Type "crontab -e" and press enter
