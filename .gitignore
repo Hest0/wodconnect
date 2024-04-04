@@ -1,0 +1,16 @@
+venv/
+myvenv/
+
+*.pyc
+__pycache__/
+
+geckodriver.log
+chromedriver.log
+
+interactive_console_output.xml
+
+.DS_Store
+
+script_automation
+
+.vscode/
