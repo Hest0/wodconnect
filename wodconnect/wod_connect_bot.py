@@ -17,7 +17,7 @@ def initialize_driver():
     options = Options()
     options.add_experimental_option("detach", True)
     options.add_argument("start-maximized")
-    time.sleep(3)
+    time.sleep(2)
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     return driver
 
@@ -32,16 +32,16 @@ def login(driver, username, password):
 
 
 def select_calendar_date(driver, date):
-    time.sleep(3)
+    time.sleep(2)
     calendar_button_text = driver.find_element("css selector", ".selected_date.js_selected_date_indicator")
     driver.execute_script("arguments[0].click();", calendar_button_text)
-    time.sleep(3)
+    time.sleep(2)
     date_element = driver.find_element("css selector", f'[aria-label="{date}"]')
     driver.execute_script("arguments[0].click();", date_element)
 
 
 def book_class(driver, class_time):
-    time.sleep(3)
+    time.sleep(2)
     scroll_element = driver.find_element(By.XPATH, f"//h2[contains(text(),'{class_time}')]")
     driver.execute_script("arguments[0].scrollIntoView();", scroll_element)
     parent_div = scroll_element.find_element(By.XPATH, "./ancestor::div[@class='workout_info']")
