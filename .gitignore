@@ -14,3 +14,8 @@ interactive_console_output.xml
 script_automation
 
 .vscode/
+
+.dockerignore
+Dockerfile
+README.Docker.md
+compose.yaml
